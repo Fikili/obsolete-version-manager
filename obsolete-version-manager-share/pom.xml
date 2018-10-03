@@ -21,7 +21,7 @@
         <!-- Alfresco Share webapp version, this is the original Alfresco webapp that will be
             customized and then deployed and run by the tomcat maven plugin when
             executing for example $ mvn clean install alfresco:run -->
-        <alfresco.share.version>5.2.d</alfresco.share.version>
+        <alfresco.share.version>5.2.f</alfresco.share.version>
 
         <!-- Default is to run with a Community edition, change to 'enterprise' if using Enterprise edition -->
         <maven.alfresco.edition>community</maven.alfresco.edition>
