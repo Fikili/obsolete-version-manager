@@ -1,2 +1,2 @@
 # obsolete-version-manager
- Project for Alfresco Hackathon 2018
+ Tieto project for Alfresco Hackathon 2018
