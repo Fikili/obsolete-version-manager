@@ -91,6 +91,20 @@
                             <artifactId>${project.artifactId}</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
+                        
+					    <moduleDependency>
+					        <groupId>org.orderofthebee.support-tools</groupId>
+					        <artifactId>support-tools-share</artifactId>
+					        <version>1.0.0.0</version>
+					        <type>amp</type>
+					    </moduleDependency>
+
+					    <moduleDependency>
+					        <groupId>de.fmaul</groupId>
+					        <artifactId>javascript-console-share</artifactId>
+					        <version>0.7-SNAPSHOT</version>
+					        <type>amp</type>
+					    </moduleDependency>                          
                     </shareModules>
                 </configuration>
             </plugin>

@@ -158,6 +158,35 @@
                             <artifactId>${project.artifactId}</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
+                        
+					    <moduleDependency>
+							<groupId>de.acosix.alfresco.utility</groupId>
+							<artifactId>de.acosix.alfresco.utility.repo</artifactId>
+							<version>1.0.3.0-SNAPSHOT</version>
+							<type>amp</type>
+						</moduleDependency>
+						
+						<moduleDependency>
+							<groupId>de.acosix.alfresco.simplecontentstores</groupId>
+							<artifactId>de.acosix.alfresco.simplecontentstores.repo</artifactId>
+							<version>1.0.0.0-SNAPSHOT</version>
+							<type>amp</type>
+						</moduleDependency>
+
+					    <moduleDependency>
+					        <groupId>org.orderofthebee.support-tools</groupId>
+					        <artifactId>support-tools-repo</artifactId>
+					        <version>1.0.0.0</version>
+					        <type>amp</type>
+					    </moduleDependency>
+
+					    <moduleDependency>
+					        <groupId>de.fmaul</groupId>
+					        <artifactId>javascript-console-repo</artifactId>
+					        <version>0.7-SNAPSHOT</version>
+					        <type>amp</type>
+					    </moduleDependency>
+                        
                     </platformModules>
                 </configuration>
             </plugin>
