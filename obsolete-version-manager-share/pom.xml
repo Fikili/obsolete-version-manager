@@ -102,7 +102,7 @@
 					    <moduleDependency>
 					        <groupId>de.fmaul</groupId>
 					        <artifactId>javascript-console-share</artifactId>
-					        <version>0.7-SNAPSHOT</version>
+					        <version>0.6</version>
 					        <type>amp</type>
 					    </moduleDependency>                          
                     </shareModules>

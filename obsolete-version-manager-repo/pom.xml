@@ -183,7 +183,7 @@
 					    <moduleDependency>
 					        <groupId>de.fmaul</groupId>
 					        <artifactId>javascript-console-repo</artifactId>
-					        <version>0.7-SNAPSHOT</version>
+					        <version>0.6</version>
 					        <type>amp</type>
 					    </moduleDependency>
                         
@@ -367,6 +367,17 @@
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
         </repository>
+
+		<!-- Maven repo used for snapshots -->
+        <repository>
+                <id>ossrh</id>
+                <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+        </repository>
+        
+        
         <!-- Alfresco Enterprise Edition Artifacts, put username/pwd for server in settings.xml -->
         <repository>
             <id>alfresco-private-repository</id>
