@@ -158,6 +158,13 @@
                             <artifactId>${project.artifactId}</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
+
+					    <moduleDependency>
+							<groupId>de.acosix.alfresco.utility</groupId>
+							<artifactId>de.acosix.alfresco.utility.common</artifactId>
+							<version>1.0.3.0-SNAPSHOT</version>
+							<type>jar</type>
+						</moduleDependency>
                         
 					    <moduleDependency>
 							<groupId>de.acosix.alfresco.utility</groupId>
