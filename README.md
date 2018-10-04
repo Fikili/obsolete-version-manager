@@ -1,13 +1,39 @@
-# obsolete-version-manager
- Tieto project for Alfresco Hackathon 2018
+# About
+obsolete-version-manager is Tieto project for Alfresco virtual Hackathon 2018
 
-## Build
-This addon relies on https://github.com/Acosix/alfresco-simple-content-stores which needs https://github.com/Acosix/alfresco-utility
+The main idea of this project is to implement "manager" which would take care of versions. For example:
+1. Keep only x latest versions on fast (default) content store and move older ones to slow content store
+2. Keep just x latest versions and remove remaining
+3. Remove versions older than specific time
 
-You have two options to build the project
+# Build
+Since this addon uses [Selector Property Store](https://github.com/Acosix/alfresco-simple-content-stores/wiki/Selector-Property-Store) feature which is implemented as part of [alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores), you need to include several dependencies to your project.
 
-### Import predefined modules to your local M2 repo
+Those dependecies are defined in repo/share pom file. You can check and change module versions if needed.
+
+Following modules are used:
+
+**Repository**
+* de.acosix.alfresco.utility.repo
+* de.acosix.alfresco.simplecontentstores.repo
+* support-tools-repo
+* javascript-console-repo
+
+**Share**
+* support-tools-share
+* javascript-console-share
+
+We decided to use the latest (snapshot) versions of [Acosix/alfresco-utility](https://github.com/Acosix/alfresco-utility.git) and [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git). Therefore, ossrh repository was added to repo pom file.
+
+## Another options how to build the project
 
 ### Build external modules by yourself
+Just clone following repositories and execute `mvn install`
+* [Acosix/alfresco-utility](https://github.com/Acosix/alfresco-utility.git)
+* [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git)
+* [OrderOfTheBee/ootbee-support-tools](https://github.com/OrderOfTheBee/ootbee-support-tools.git)
+* [share-extras/js-console](https://github.com/share-extras/js-console.git)
 
- 
+### Import predefined modules to your local maven repo
+You can download builded artifacts from [external-modules](external-modules_To_BE_DELETED) folder
+`mvn install:install-file -Dfile=<file location> -DgroupId=<groupid> -DartifactId=<artifactid> -Dversion=<version> -Dpackaging=<amp/jar>`
