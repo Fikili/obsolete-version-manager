@@ -26,6 +26,7 @@ Those dependecies are defined in repo/share pom file. You can check and change m
 We decided to use the latest (snapshot) versions of [Acosix/alfresco-utility](https://github.com/Acosix/alfresco-utility.git) and [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git). Therefore, [ossrh](https://github.com/FilipBruska/obsolete-version-manager/blob/40ddfea93613c70fa84c47069775ba87e4c62052/obsolete-version-manager-repo/pom.xml#L371-L378) repository was added to repo pom file.
 
 ## Another options how to build the project
+Advice for following methods, be sure that you are using the same version in pom file as in your local repo.
 
 ### Build external modules by yourself
 Just clone following repositories and execute `mvn install`
