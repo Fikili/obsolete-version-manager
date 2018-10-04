@@ -1,7 +1,9 @@
 # About
 obsolete-version-manager is Tieto project for Alfresco virtual Hackathon 2018
 
-The main idea of this project is to implement "manager" which would take care of versions. For example:
+The main idea of this project is to implement "manager" which would take care of versions. 
+
+For example:
 1. Keep only x latest versions on fast (default) content store and move older ones to slow content store
 2. Keep just x latest versions and remove remaining
 3. Remove versions older than specific time
@@ -9,9 +11,7 @@ The main idea of this project is to implement "manager" which would take care of
 # Build
 Since this addon uses [Selector Property Store](https://github.com/Acosix/alfresco-simple-content-stores/wiki/Selector-Property-Store) feature which is implemented as part of [alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores), you need to include several dependencies to your project.
 
-Those dependecies are defined in repo/share pom file. You can check and change module versions if needed.
-
-Following modules are used:
+Those dependecies are defined in repo/share pom file. You can check and change module versions if needed. Following modules are used:
 
 **Repository**
 * de.acosix.alfresco.utility.repo
@@ -23,7 +23,7 @@ Following modules are used:
 * support-tools-share
 * javascript-console-share
 
-We decided to use the latest (snapshot) versions of [Acosix/alfresco-utility](https://github.com/Acosix/alfresco-utility.git) and [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git). Therefore, ossrh repository was added to repo pom file.
+We decided to use the latest (snapshot) versions of [Acosix/alfresco-utility](https://github.com/Acosix/alfresco-utility.git) and [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git). Therefore, [ossrh](https://github.com/FilipBruska/obsolete-version-manager/blob/40ddfea93613c70fa84c47069775ba87e4c62052/obsolete-version-manager-repo/pom.xml#L371-L378) repository was added to repo pom file.
 
 ## Another options how to build the project
 
@@ -35,5 +35,6 @@ Just clone following repositories and execute `mvn install`
 * [share-extras/js-console](https://github.com/share-extras/js-console.git)
 
 ### Import predefined modules to your local maven repo
-You can download builded artifacts from [external-modules](external-modules_To_BE_DELETED) folder
+You can download builded artifacts from [external-modules](external-modules_To_BE_DELETED) folder and execute imports:
+
 `mvn install:install-file -Dfile=<file location> -DgroupId=<groupid> -DartifactId=<artifactid> -Dversion=<version> -Dpackaging=<amp/jar>`
