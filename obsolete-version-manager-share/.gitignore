@@ -1,5 +1,6 @@
 /.settings/
 /alf_data_dev/
+/src/main/resources/rebel.xml
 /logs/
 /.metadata/
 *.log*
