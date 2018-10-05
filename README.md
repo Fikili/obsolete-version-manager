@@ -10,12 +10,12 @@ For example:
 
 # Default configuration
 There are four different custom content stores used in this project:
-* defaultTenantFileContentStore - Works in the same way as Alfresco default content. Content is stored under ${dir.contentstore}
+* defaultTenantFileContentStore - Works in the same way as Alfresco default content store. Content is stored under ${dir.contentstore}
 * fastFileStore - Used especially for demonstration purposes. Content is stored under ${dir.root}\\fastStore
 * slowFileStore - Same as above. Content is stored under ${dir.root}\\slowStore
 * propertyRoutingStore - This "facade" store decides which content store will be used based on cm:storeName property defined in cm:storeSelector aspect 
 
-All 4 content stores are configured in [alfresco-global.properties](alfresco-global.properties) 
+All 4 content stores are configured in [alfresco-global.properties](/blob/master/obsolete-version-manager-repo/src/main/resources/alfresco/module/obsolete-version-manager-repo/alfresco-global.properties) 
 
 # Build
 Since this addon uses [Selector Property Store](https://github.com/Acosix/alfresco-simple-content-stores/wiki/Selector-Property-Store) feature which is implemented as part of [alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores), several mandatory dependencies are automatically added.
