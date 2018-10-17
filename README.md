@@ -43,8 +43,3 @@ Just clone following repositories and execute `mvn install`
 * [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git)
 * [OrderOfTheBee/ootbee-support-tools](https://github.com/OrderOfTheBee/ootbee-support-tools.git)
 * [share-extras/js-console](https://github.com/share-extras/js-console.git)
-
-### Import predefined modules to your local maven repo
-You can download builded artifacts from [external-modules](external-modules_To_BE_DELETED) folder and execute imports:
-
-`mvn install:install-file -Dfile=<file location> -DgroupId=<groupid> -DartifactId=<artifactid> -Dversion=<version> -Dpackaging=<amp/jar>`
