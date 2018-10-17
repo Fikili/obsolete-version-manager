@@ -43,3 +43,7 @@ Just clone following repositories and execute `mvn install`
 * [Acosix/alfresco-simple-content-stores](https://github.com/Acosix/alfresco-simple-content-stores.git)
 * [OrderOfTheBee/ootbee-support-tools](https://github.com/OrderOfTheBee/ootbee-support-tools.git)
 * [share-extras/js-console](https://github.com/share-extras/js-console.git)
+
+# Hackathon findings
+* It is not so easy to transfer versions
+* Alfresco simple content store module is very useful
